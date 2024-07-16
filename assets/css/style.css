@@ -33,11 +33,23 @@ ul,ol{
 a{
     text-decoration: none;
 }
-
+.btn-1{
+    display: block;
+    color: var(--primary-color);
+    box-shadow: var(--main-box-shadow);
+    border-radius: 6px;
+    padding: 15px 35px;
+    margin: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: var(--normal-font-family);
+}
 
 /* Header Start */
 header{
     padding: 14px 45px;
+    background-color: transparent;
 }
 .header-left .logo a{
 
@@ -53,12 +65,40 @@ header{
     justify-content: flex-end;
     text-transform: uppercase;
 }
+.header-right .navbar ul li a{
+    color: var(--heading-text);
+    font-size: 13px;
+    font-weight: 400;
+}
 
 
 /* Body Start */
-.card{
+.card-1{
     padding: 30px;
     box-shadow: var(--main-box-shadow);
     border-radius: 10px;
     background: var(--body-bg);
+}
+/* Home */
+.self .user{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(255, 1, 79, 0.2);
+    border-radius: 50%;
+}
+.self .user span{
+    height: 40px;
+    width: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+}
+.inner-card{
+    padding: 25px 20px 15px 20px;
+}
+.curriculum p{
+    color: var(--heading-text);
+    font-family: var(--normal-text);
+    padding-left: 15px;
 }
