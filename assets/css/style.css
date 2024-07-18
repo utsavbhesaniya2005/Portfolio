@@ -94,6 +94,60 @@ header{
     text-align: center;
     line-height: 40px;
 }
+.user-name{
+    margin-bottom: 30px;
+}
+.user-name h1{
+    font-size: 52px;
+    color: var(--white);
+    font-weight: bold;
+}
+.user-name h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+.dynamic-texts{
+    color: var(--primary-color);
+    font-weight: 800;
+    font-size: 42px;
+    height: 52px;
+    overflow: hidden;
+}
+.dynamic-texts li:first-child{
+    position: relative;
+    animation: first-slide 5s steps(1000) infinite;
+}
+@keyframes first-slide{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -125px;
+    }
+}
+.dynamic-texts li:last-child{
+    position: relative;
+    animation: second-slide 5s steps(1000) infinite;
+}
+@keyframes second-slide{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: -125px;
+    }
+}
+.user-details ul li a i{
+    font-size: 24px;
+    text-align: start;
+    color: var(--primary-color);
+    padding-right: 20px;
+}
+.user-details ul li a span{
+    color: var(--heading-text);
+    font-size: 16px;
+    font-weight: 500;
+}
 .inner-card{
     padding: 25px 20px 15px 20px;
 }
