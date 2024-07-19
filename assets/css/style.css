@@ -11,6 +11,8 @@
     --heading-text-rgb : 196, 207, 222;
     --normal-text : #878e99;
     --normal-text-rgb : 135, 142, 153;
+    --border : #121415;
+    --border-rgb : #121415;
     --main-box-shadow : 10px 10px 19px #1c1e22, -10px -10px 19px #262a2e;
     --heading-font-family : 'Montserrat',sans-serif;
     --normal-font-family : 'Poppins',sans-serif;
@@ -45,14 +47,14 @@ a{
     text-transform: uppercase;
     font-family: var(--normal-font-family);
 }
+.mb-100{
+    margin-bottom: 100px;
+}
 
 /* Header Start */
 header{
     padding: 14px 45px;
     background-color: transparent;
-}
-.header-left .logo a{
-
 }
 .header-left .logo a span{
     color: var(--heading-text);
@@ -79,7 +81,11 @@ header{
     border-radius: 10px;
     background: var(--body-bg);
 }
+
 /* Home */
+.home .container{
+    border-bottom: 1px solid var(--border);
+}
 .self .user{
     height: 60px;
     width: 60px;
@@ -106,39 +112,15 @@ header{
     font-size: 20px;
     font-weight: 700;
 }
-.dynamic-texts{
+.user-name h1 span, .user-name  h2 span{
     color: var(--primary-color);
-    font-weight: 800;
-    font-size: 42px;
-    height: 52px;
-    overflow: hidden;
+    font-size: 72px;
 }
-.dynamic-texts li:first-child{
-    position: relative;
-    animation: first-slide 5s steps(1000) infinite;
-}
-@keyframes first-slide{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: -125px;
-    }
-}
-.dynamic-texts li:last-child{
-    position: relative;
-    animation: second-slide 5s steps(1000) infinite;
-}
-@keyframes second-slide{
-    0%{
-        top: 0;
-    }
-    100%{
-        top: -125px;
-    }
+.user-name  h2 span{
+    font-size: 28px;
 }
 .user-details ul li a i{
-    font-size: 24px;
+    font-size: 14px;
     text-align: start;
     color: var(--primary-color);
     padding-right: 20px;
@@ -152,7 +134,62 @@ header{
     padding: 25px 20px 15px 20px;
 }
 .curriculum p{
-    color: var(--heading-text);
     font-family: var(--normal-text);
     padding-left: 15px;
+}
+
+/* My Experience */
+.my-exp .container{
+    border-bottom: 1px solid var(--border);
+}
+.heading{
+    text-align: center;
+}
+.heading h4{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+.heading h1{
+    font-size: 60px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.experience-style{
+    width: 100%;
+    padding: 30px;
+    box-shadow: var(--main-box-shadow);
+}
+.experience-img{
+    overflow: hidden;
+}
+.experience-des .experience-img img{
+    height: 150px;
+    transition: all 0.3s linear;
+}
+.experience-des .experience-img img:hover{
+    transform: scale(1.05);
+}
+.experience-des .experience-content .work-year p{
+    background-color: #545961;
+    padding: 2px 8px;
+    font-family: var(--normal-font-family);
+    font-weight: 500;
+    font-size: 14px;
+}
+.experience-des .experience-content .work-title h4{
+    font-size: 26px;
+    margin: 10px 0 20px;
+}
+.experience-des .experience-content .work-subtitle h6{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+.experience-des .experience-content .work-place p{
+    font-family: var(--normal-font-family);
+    color: var(--normal-text);
+    font-weight: 400;
+    margin: 15px 0 0 0;
 }
