@@ -36,28 +36,28 @@
             </div>
             <div class="col-10">
                 <div class="header-right">
-                    <nav id="navbar" class="navbar px-3 mb-3">
+                    <nav id="navbar-example2" class="navbar px-3 mb-3">
                         <ul class="nav nav-pills">
                             <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading1">Home</a>
+                                <a class="nav-link active" href="#home">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading2">My Experience</a>
+                                <a class="nav-link" href="#myexperience">My Experience</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading3">Education</a>
+                                <a class="nav-link" href="#education">Education</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading4">Resume</a>
+                                <a class="nav-link" href="#resume">Resume</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading5">Portfolio</a>
+                                <a class="nav-link" href="#portfolio">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading6">Blog</a>
+                                <a class="nav-link" href="#blog">Blog</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#scrollspyHeading7">Contacts</a>
+                                <a class="nav-link" href="#contacts">Contacts</a>
                             </li>
                         </ul>
                     </nav>
@@ -66,9 +66,9 @@
         </div>
     </header>
 
-    <main>
+    <main data-bs-spy="scroll" data-bs-target="#navbar">
         <!-- Home -->
-        <section class="home mt-5" id="scrollspyHeading1">
+        <section class="home pb-5 mb-5" id="home">
             <div class="container">
                 <div class="row">
                     <div class="col-5">
@@ -82,8 +82,8 @@
                                             </span>
                                         </div>
                                         <div class="user-name">
-                                            <h1>Hi, i'm <span>Utsav</span></h1><br>
-                                            <h2>& I Can Do <span>Full Stack Developer</span></h2>
+                                            <h1>Hi, i'm <span></span></h1><br>
+                                            <h2>& I Can Do <span></span></h2>
                                         </div>
                                         <div class="user-details">
                                             <ul>
@@ -131,7 +131,7 @@
         </section>
 
         <!-- My Experience -->
-        <section class="py-5 my-5 my-exp" id="scrollspyHeading2">
+        <section class="my-exp py-5 my-5" id="myexperience">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -170,12 +170,12 @@
                     </div>
 
                     <div class="col-11">
-                        <div class="experience-style d-flex justify-content-between align-items-center rounded">
-                            <div class="experience-des d-flex">
+                        <div class="experience-style d-flex flex-row-reverse justify-content-between align-items-center rounded">
+                            <div class="experience-des d-flex flex-row-reverse">
                                 <div class="experience-img rounded">
                                     <img class="rounded" src="./assets/images/experience/experience-img-2.jpg" alt="experience-img-2">
                                 </div>
-                                <div class="experience-content ps-4">
+                                <div class="experience-content pe-4">
                                     <div class="work-year">
                                         <p class="rounded-pill d-inline"></p>
                                     </div>
@@ -225,10 +225,107 @@
                 </div>
             </div>
         </section>
+
+        <!-- Education -->
+        <section class="education py-5 my-5" id="education">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="heading">
+                            <h4>Phd, Master And Bachelor</h4>
+                            <h1>Education</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center row-gap-5">
+                    <div class="col-11">
+                        <div class="experience-style mt-5 d-flex justify-content-between align-items-center rounded">
+                            <div class="experience-des d-flex">
+                                <div class="experience-img rounded">
+                                    <img class="rounded" src="./assets/images/education/college-img.png" alt="College-img">
+                                </div>
+                                <div class="experience-content ps-4">
+                                    <div class="work-year">
+                                        <p class="rounded-pill d-inline">2022 - Present</p>
+                                    </div>
+                                    <div class="work-title">
+                                        <h4>Bachelor Of Computer Application</h4>
+                                    </div>
+                                    <div class="work-subtitle">
+                                        <h6>Vnsgu University</h6>
+                                    </div>
+                                    <div class="work-place">
+                                        <p>Amroli, Surat 394107, Gujrat</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience-btn">
+                                <a href="#" class="btn-1">Admission</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-11">
+                        <div class="experience-style d-flex flex-row-reverse justify-content-between align-items-center rounded">
+                            <div class="experience-des d-flex flex-row-reverse">
+                                <div class="experience-img rounded">
+                                    <img class="rounded" src="./assets/images/education/school-img.png" alt="School-img">
+                                </div>
+                                <div class="experience-content pe-4">
+                                    <div class="work-year">
+                                        <p class="rounded-pill d-inline">2021 - 2022</p>
+                                    </div>
+                                    <div class="work-title">
+                                        <h4>Higher Secondary School Education</h4>
+                                    </div>
+                                    <div class="work-subtitle">
+                                        <h6>K & M P Patel Sarvajanik Vidhyalay</h6>
+                                    </div>
+                                    <div class="work-place">
+                                        <p>Amroli, Surat 394107, Gujrat</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience-btn">
+                                <a href="#" class="btn-1">Admission</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-11">
+                        <div class="experience-style mb-100 d-flex justify-content-between align-items-center rounded">
+                            <div class="experience-des d-flex">
+                                <div class="experience-img rounded">
+                                    <img class="rounded" src="./assets/images/education/school-img.png" alt="School-img">
+                                </div>
+                                <div class="experience-content ps-4">
+                                    <div class="work-year">
+                                        <p class="rounded-pill d-inline">2019 - 2020</p>
+                                    </div>
+                                    <div class="work-title">
+                                        <h4>Secondary School Education</h4>
+                                    </div>
+                                    <div class="work-subtitle">
+                                        <h6>K & M P Patel Sarvajanik Vidhyalay</h6>
+                                    </div>
+                                    <div class="work-place">
+                                        <p>Amroli, Surat 394107, Gujrat</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="experience-btn">
+                                <a href="#" class="btn-1">Admission</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Bootstrap js -->
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
     <!-- https://getbootstrap.com/docs/5.3/getting-started/introduction/ -->
 </body>
 

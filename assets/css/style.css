@@ -53,6 +53,10 @@ a{
 
 /* Header Start */
 header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
     padding: 14px 45px;
     background-color: transparent;
 }
@@ -63,16 +67,19 @@ header{
     text-transform: uppercase;
 }
 .navbar{
-    background: var(--body-bg);
     justify-content: flex-end;
     text-transform: uppercase;
 }
 .header-right .navbar ul li a{
     color: var(--heading-text);
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 400;opacity: 0.7;
+    transition: all 0.3s linear;
 }
-
+.header-right .navbar ul li a:hover{
+    color: var(--primary-color);
+    font-weight: 600;
+}
 
 /* Body Start */
 .card-1{
@@ -83,6 +90,9 @@ header{
 }
 
 /* Home */
+.home{
+    padding-top: 260px;
+}
 .home .container{
     border-bottom: 1px solid var(--border);
 }
@@ -108,6 +118,27 @@ header{
     color: var(--white);
     font-weight: bold;
 }
+.user-name h1 span::after{
+    content: '';
+    animation: animatetext 2.5s infinite;
+}
+@keyframes animatetext{
+    0%{
+        content: "U";
+    }
+    25%{
+        content: "Ut";
+    }
+    50%{
+        content: "Uts";
+    }
+    75%{
+        content: "Utsa";
+    }
+    100%{
+        content: "Utsav";
+    }
+} 
 .user-name h2{
     font-size: 20px;
     font-weight: 700;
@@ -116,8 +147,57 @@ header{
     color: var(--primary-color);
     font-size: 72px;
 }
-.user-name  h2 span{
+.user-name h2 span{
     font-size: 28px;
+}
+.user-name h2 span::after{
+    content: '';
+    animation: animatetext2 2.5s infinite;
+}
+@keyframes animatetext2{
+    0%{
+        content: "F";
+    }5%{
+        content: "Fu";
+    }10%{
+        content: "Ful";
+    }15%{
+        content: "Full";
+    }20%{
+        content: "Full ";
+    }25%{
+        content: "Full S";
+    }30%{
+        content: "Full St";
+    }35%{
+        content: "Full Sta";
+    }40%{
+        content: "Full Stac";
+    }45%{
+        content: "Full Stack";
+    }50%{
+        content: "Full Stack ";
+    }55%{
+        content: "Full Stack D";
+    }60%{
+        content: "Full Stack De";
+    }65%{
+        content: "Full Stack Dev";
+    }70%{
+        content: "Full Stack Deve";
+    }75%{
+        content: "Full Stack Devel";
+    }80%{
+        content: "Full Stack Develo";
+    }85%{
+        content: "Full Stack Develop";
+    }90%{
+        content: "Full Stack Develop";
+    }95%{
+        content: "Full Stack Develope";
+    }100%{
+        content: "Full Stack Developer";
+    }
 }
 .user-details ul li a i{
     font-size: 14px;
@@ -192,4 +272,14 @@ header{
     color: var(--normal-text);
     font-weight: 400;
     margin: 15px 0 0 0;
+}
+
+/* Education */
+.nav-pills .nav-link.active{
+    background-color: transparent;
+    color: var(--white);
+    opacity: 1;
+}
+.education .container{
+    border-bottom: 1px solid var(--border);
 }
